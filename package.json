@@ -1,0 +1,8 @@
+{
+  "name": "rpecalc",
+  "version": "0.1.0",
+  "description": "RPE Calculator for PowerLifting",
+  "main": "index.html",
+  "author": "Kajetan Litwinowicz",
+  "license": "MIT"
+}

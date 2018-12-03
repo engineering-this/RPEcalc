@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>RPE calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body class="wrapper">
+<header class="header">
+	<h1>RPE Calculator</h1>
+</header>
+<main class="main">
+	<form class="form" id="max-to-target">
+		<p>Calculate your target weight:</p>
+		<label><span>RPE:</span><input class="rpe" list="rpe" min="6.5" max="10" step="0.5" type="number"></label>
+		<label><span>Reps:</span><input class="reps" list="reps" min="1" max="12" step="1" type="number"></label>
+		<label><span>Max:</span><input class="max" min="0" step="0.5" type="number"></label>
+		<label class="last"><span>Weight:</span><input class="weight" readonly type="number" placeholder="Fill above fields"></label>
+	</form>
+	<form class="form" id="actual-to-max">
+		<p>Estimate your current 1RM:</p>
+		<label><span>RPE:</span><input class="rpe" list="rpe" min="6.5" max="10" step="0.5" type="number"></label>
+		<label><span>Reps:</span><input class="reps" list="reps" min="1" max="12" step="1" type="number"></label>
+		<label><span>Weight:</span><input class="weight" min="0" step="0.5" type="number"></label>
+		<label class="last"><span>Max:</span><input class="max" readonly type="number" placeholder="Fill above fields"></label>
+	</form>
+</main>
+<datalist id="rpe">
+	<option value="6.5">
+	<option value="7">
+	<option value="7.5">
+	<option value="8">
+	<option value="8.5">
+	<option value="9">
+	<option value="9.5">
+	<option value="10">
+</datalist>
+
+<datalist id="reps">
+	<option value="1"></option>
+	<option value="2"></option>
+	<option value="3"></option>
+	<option value="4"></option>
+	<option value="5"></option>
+	<option value="6"></option>
+	<option value="7"></option>
+	<option value="8"></option>
+	<option value="9"></option>
+	<option value="10"></option>
+	<option value="11"></option>
+	<option value="12"></option>
+</datalist>
+
+<script src="app.js"></script>
+</body>
+
+</html>
